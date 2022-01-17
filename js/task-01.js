@@ -14,12 +14,13 @@
 // }
 
 
-const allCategoriesEl = document.querySelectorAll('ul#categories li.item');
-const numberOfCatrgoriesEl = allCategoriesEl.length;
-console.log(`Number of categories: ${numberOfCatrgoriesEl}`);
-console.log('')
+// const allCategoriesEl = document.querySelectorAll('ul#categories li.item');
+// const numberOfCatrgoriesEl = allCategoriesEl.length;
+// console.log(`Number of categories: ${numberOfCatrgoriesEl}`);
+// console.log('')
 
-const headerTextEl = allCategoriesEl.firstElementChild.textContent;
+// const headerTextEl = allCategoriesEl.firstElementChild.textContent;
  
-headerTextEl.forEach(element => );
-console.log(`Category: ${headerTextEl}`)
+// headerTextEl.forEach(element => );
+// console.log(`Category: ${headerTextEl}`)
+
