@@ -13,12 +13,10 @@ const images = [
   },
 ];
 
-const imgagesElem = document.querySelector('#gallery')
+const imgagesElem = document.querySelector('.gallery')
 
-const ingredientsListItems = ingredients.map((gallerys) => {
-  const itemLi = document.createElement('li')
-  const imgItem = document.createElement('img')
-  itemLi.textContent = gallerys
-  console.log(itemLi)
-  return itemLi
-})
+const imagesListItems = images.map(image => 
+  `<li class='gallery-item flex-container'>
+  <img src='${image.url}' alt='${image.alt}' width='500'</li>`).join("");
+
+  imgagesElem.insertAdjacentHTML('beforeend', imagesListItems)

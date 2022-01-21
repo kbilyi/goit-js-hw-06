@@ -22,3 +22,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.flex-container > li {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(82, 34, 34);
+}
+
+.flex-container {
+  line-height: 50px;
+}
