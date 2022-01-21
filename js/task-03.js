@@ -12,3 +12,13 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const imgagesElem = document.querySelector('#gallery')
+
+const ingredientsListItems = ingredients.map((gallerys) => {
+  const itemLi = document.createElement('li')
+  const imgItem = document.createElement('img')
+  itemLi.textContent = gallerys
+  console.log(itemLi)
+  return itemLi
+})
