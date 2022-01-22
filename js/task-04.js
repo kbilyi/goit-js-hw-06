@@ -1,7 +1,9 @@
 const incrementBtn = document.querySelector('[data-action="increment"]')
 const decrementBtn = document.querySelector('[data-action="decrement"]')
-const valueBtn = document.querySelector('[id=value]')
+const valueBtn = document.getElementById('value')
 
-for(let i = 0; i < numberOfCatrgoriesEl; i += 1) {
-
-}
+incrementBtn.addEventListener('click', () => {
+    valueBtn = incrementBtn + 1
+    return valueBtn
+})
+incrementBtn()
