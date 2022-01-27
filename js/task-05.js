@@ -7,10 +7,10 @@ const refs = {
 refs.formInput.addEventListener('input', onInputChange)
 
 function onInputChange(event) {
-    if (refs.formInput.IsNullOrEmpty) {
+    if (event.currentTarget.value === "") {
         refs.nameOutput.textContent = 'Anonymous'
+    } else {
+        // console.log(event.currentTarget.value);
+        refs.nameOutput.textContent = event.currentTarget.value
     }
-
-    console.log(event.currentTarget.value);
-    refs.nameOutput.textContent = event.currentTarget.value
 }
