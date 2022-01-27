@@ -1,11 +1,16 @@
-const formInput = document.getElementById('name-input')
-const nameOutput = document.getElementById('name-output')
 
-console.log(nameOutput);
-console.log(formInput);
-
-const output = function() {
-    formInput.innerText = nameOutput.innerText.innerHTML
+const refs = {
+    formInput: document.getElementById('name-input'),
+    nameOutput: document.getElementById('name-output'),
 }
 
-output()
+refs.formInput.addEventListener('input', onInputChange)
+
+function onInputChange(event) {
+    if (refs.formInput.IsNullOrEmpty) {
+        refs.nameOutput.textContent = 'Anonymous'
+    }
+
+    console.log(event.currentTarget.value);
+    refs.nameOutput.textContent = event.currentTarget.value
+}
