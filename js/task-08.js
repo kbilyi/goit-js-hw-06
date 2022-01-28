@@ -1,4 +1,4 @@
-const form = document.querySelector(["submit"])
+const form = document.querySelector("button")
 
 form.addEventListener('submit', onFormSubmit)
 
