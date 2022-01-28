@@ -1,9 +1,11 @@
-const form = document.querySelector("button")
+// const form = document.querySelector("login-form > submit")
 
-form.addEventListener('submit', onFormSubmit)
+// form.addEventListener('submit', onFormSubmit)
 
-function onFormSubmit(event) {
-    event.preventDefault()
+// function onFormSubmit(event) {
+//     event.preventDefault();
 
-    console.log(asdsad);
-}
+//     console.log(asdsad);
+// }
+
+
