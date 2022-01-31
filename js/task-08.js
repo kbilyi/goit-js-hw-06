@@ -1,39 +1,24 @@
-const formSub = document.querySelector("login-form > submit")
-const formPass = document.querySelector("login-form > password")
-const formEmail = document.querySelector('login-form > email')
+const formSub = document.querySelector(".login-form");
+const formPass = document.querySelector("[name='password']")
+const formEmail = document.querySelector("[name='email']")
 
-formSub.addEventListener('submit', onFormSubmit) 
+formSub.addEventListener('submit', onFormSubmit)
     
-
 function onFormSubmit(event) {
     event.preventDefault()
 
-    if(formPass === '') {
+    if (formPass === "") {
         alert('Все поля должны быть заполнены!')
-    } else if(formEmail === '') {
+    } 
+    else if (formEmail === "") {
         alert('Все поля должны быть заполнены!')
+    } 
+    else {
+        const formElem = event.currentTarget.elements
+        const mail = formElem.email.value
+        const password = formElem.password.value
+        const subscription = formElem.subscription.value
+        const formData = {mail, password, subscription,}
+        console.log(formData);
     }
 }
-
-
-
-
-
-
-// form.addEventListener('submit', onFormSubmit)
-
-// function onFormSubmit(event) {
-//     event.preventDefault();
-
-//     console.log(asdsad);
-// }
-
-// function onFormSubmit(event) {
-//     if (event.currentTarget.value === "") {
-//         alert("Все поля должны быть заполнены")
-//     } else {
-//         // console.log(event.currentTarget.value);
-//         refs.nameOutput.textContent = event.currentTarget.value
-//     }
-// }
-
