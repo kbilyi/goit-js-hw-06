@@ -6,6 +6,7 @@ formSub.addEventListener('submit', onFormSubmit)
     
 function onFormSubmit(event) {
     event.preventDefault()
+    const { elements: { email, password } } = event.currentTarget
 
     if (formPass === "") {
         alert('Все поля должны быть заполнены!')
@@ -18,7 +19,7 @@ function onFormSubmit(event) {
         const mail = formElem.email.value
         const password = formElem.password.value
         const subscription = formElem.subscription.value
-        const formData = {mail, password, subscription,}
+        const formData = event.currentTarget
         console.log(formData);
     }
 }
